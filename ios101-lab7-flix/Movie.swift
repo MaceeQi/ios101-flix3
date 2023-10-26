@@ -98,6 +98,9 @@ extension Movie {
 
         // 3. Save the updated favorite movies array
         Movie.save(favoriteMovies, forKey: Movie.favoritesKey)
+        
+        print("🍿---Favorites---")
+        favoriteMovies.forEach{ movie in print(movie.title) }
     }
 
     
@@ -116,5 +119,8 @@ extension Movie {
         
         // 4. Save the updated favorite movies array.
         Movie.save(favoriteMovies, forKey: Movie.favoritesKey)
+        
+        print("🍿---Favorites---")
+        favoriteMovies.forEach{ movie in print(movie.title) }
     }
 }
